@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('/front-end/html/nav.html')
+    fetch('./front-end/components/nav.html')
         .then(response => response.text())
         .then(data => {
             document.querySelector('nav').innerHTML = data;
