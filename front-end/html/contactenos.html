@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/front-end/css/nav.css">
+    <link rel="stylesheet" href="/front-end/css/contactenos.css">
+    <link rel="stylesheet" href="/front-end/css/Footer.css">
+</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+
+    <!-- !Sección del titulo -->
+
+    <section class="section-title">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="titulo-faq">
+                    Preguntas Frecuentes
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- !Sección del acordeón -->
+    <div class="container-acordion">
+        <div class="acordion-item">
+            <!-- Checkbox: al marcarlo, se activa el contenido -->
+            <input type="checkbox" id="acordion1">
+            <!-- Label: actúa como el botón visible del acordeón -->
+            <label class="acordion-header" for="acordion1">
+                <span>Productos y Hobbies</span>
+                <span class="plus-icon">+</span>
+            </label>
+            <!-- Contenido: se muestra/oculta según el estado del checkbox -->
+            <div class="acordion-content">
+                <ul>
+                    <li>Ofrecemos productos para diversos hobbies: lectura, música, pintura, deportes, crochet y más.</li>
+                    <li>Todos nuestros productos son cuidadosamente seleccionados para garantizar la mejor calidad.</li>
+                    <li>Contamos con guías y kits de inicio para principiantes.</li>
+                    <li>Actualizamos nuestro catálogo regularmente con nuevos productos y tendencias.</li>
+                    <li>Brindamos asesoría especializada para ayudarte a elegir los productos adecuados para tu hobby.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="acordion-item">
+            <input type="checkbox" id="acordion2">
+            <label class="acordion-header" for="acordion2">
+                <span>Métodos de Pago</span>
+                <span class="plus-icon">+</span>
+            </label>
+            <div class="acordion-content">
+                <p>Aceptamos diversos métodos de pago para tu comodidad:</p>
+                <ul>
+                    <li>Tarjetas de crédito y débito (Visa, Mastercard, American Express)</li>
+                    <li>PayPal</li>
+                    <li>Transferencia bancaria</li>
+                    <li>Pago contra entrega (solo en algunas zonas)</li>
+                    <li>Pagos en cuotas disponibles con tarjetas seleccionadas</li>
+                </ul>
+                
+            </div>
+        </div>
+        
+        <div class="acordion-item">
+            <input type="checkbox" id="acordion3">
+            <label class="acordion-header" for="acordion3">
+                <span>Envíos y Entregas</span>
+                <span class="plus-icon">+</span>
+            </label>
+            <div class="acordion-content">
+                <h4>Información de Envíos:</h4>
+                <ul>
+                    <li>Envíos a todo el país en 3-5 días hábiles</li>
+                    <li>Envío gratis en compras superiores a $100.000</li>
+                    <li>Seguimiento en tiempo real de tu pedido</li>
+                    <li>Embalaje especial para productos delicados</li>
+                    <li>Opciones de envío express disponibles</li>
+                </ul>
+                
+            </div>
+        </div>
+        
+        <div class="acordion-item">
+            <input type="checkbox" id="acordion4">
+            <label class="acordion-header" for="acordion4">
+                <span>Sobre HobbVerse</span>
+                <span class="plus-icon">+</span>
+            </label>
+            <div class="acordion-content">
+                <h4>¿Quiénes Somos?</h4>
+                <p>HobbVerse es tu destino único para descubrir y desarrollar nuevas pasiones. Nos especializamos en:</p>
+                <ul>
+                    <li>Curación experta de productos para diferentes hobbies</li>
+                    <li>Comunidad activa de entusiastas</li>
+                    <li>Atención al cliente personalizada</li>
+                    <li>Garantía de satisfacción en todos nuestros productos</li>
+                    
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--! Sección del contáctenos-->
+    <section class="contact">
+        <div class="container-contact">
+            <h2>Contáctenos</h2>
+            <form id="contactForm">
+                <input type="text" id="name" name="name" placeholder="Nombre">
+                <input type="email" id="email" name="email" placeholder="Correo">
+                <input type="text" id="phone" name="phone" placeholder="Teléfono">
+                <textarea id="message" name="message" placeholder="Mensaje"></textarea>
+                <button type="button" id="submitButton">Enviar</button>
+            </form>
+        
+        </div>
+    </section>
+    
+    
+    <!--! Sección del footer-->
+    <footer></footer>
+
+    <!--! Sección del script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/front-end/js/loadNavbar.js"></script>
+    <script src="/front-end/js/loadFooter.js"></script>
+    <script src="/front-end/js/contactenos.js"></script>
+</body>
+</html>
